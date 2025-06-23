@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(41, 41, 41);
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+            background-color: #0d0d0d;
+        }
+
+        .navdiv {
+            display: flex;
+        }
+
+        .nava {
+            color: #ffffff;
+            font-size: 1.3em;
+            font-family: garamond;
+        }
+
+        .nava:hover {
+            color: rgb(45, 207, 45);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .navli {
+            list-style: none;
+            display: inline-block;
+            padding-top: 1.9vw;
+            padding-left: 10vw;
+        }
+
+        .navli:hover {
+            transform: scale(1.01);
+        }
+
+        #search {
+            padding: 10px;
+            margin-left: 5vw;
+            border-radius: 20px;
+        }
+
+        #logo {
+            width: 15vw;
+            height: 5vw;
+        }
+
+        .hero {
+            background-image: url(https://t3.ftcdn.net/jpg/06/00/03/40/240_F_600034015_x0bpeUjnP0eXvWZDUv56Rjz07kQhm20z.jpg);
+            text-align: center;
+            color: #ffffff;
+            margin: auto;
+            padding: 20px;
+            font-family: papyrus;
+            margin-bottom: 10px;
+        }
+
+        .hero>h1 {
+            font-size: 3.5em;
+        }
+
+        .hero>p {
+            font-size: 2.5em;
+        }
+
+        .container {
+           padding: 20px; 
+           background-color: #0d0d0d;
+           color: #ffffff;
+           text-align: center;
+        }
+
+        .container>h1 {
+            font-size: 3em;
+            font-family: lucida handwriting;
+            text-shadow: 0px 0px 8px rgb(45, 207, 45);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+            gap: 30px;
+        }
+
+        .fet {
+            max-width: 400px;
+            background-color: #121212;
+            max-height: 300px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 12px 2px rgb(45, 207, 45);
+            transition: 0.3s ease;
+            overflow: hidden;
+        }
+
+        .fet:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 2px 3px rgb(45, 207, 45);
+        }
+
+        .fet>img {
+            width: 70%;
+            height: 70%;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 6px 1px lightgray;
+            cursor: pointer;
+        }
+
+        .fet>img:hover {
+            transform: scale(1.07);
+            box-shadow: 0px 0px 6px 6px lightgray;
+        }
+
+        .fet>h2 {
+            font-family: lucida handwriting;
+            font-size: 2em;
+            text-shadow: 0px 0px 6px rgb(45, 207, 45);
+        }
+
+        .fet>p {
+            font-family: papyrus;
+            font-weight: bolder;
+            text-shadow: 0px 0px 6px rgb(78, 75, 75);
+            font-size: 1.1em;
+        }
+
+        #footr {
+            background: #0d0d0d;
+            padding: 80px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .fcnt {
+            font-size: 1.2em;
+        }
+
+        .fcnt>ul>li {
+            list-style: none;
+        }
+
+        .fcnt>ul>li>a:hover {
+            text-decoration: underline;
+        }
+
+        .fcnt>h4 {
+            font-size: 1.4em;
+            padding-bottom: 10px;
+            color: rgb(45, 207, 45);
+        }
+
+        .fcnt>ul>li>a {
+            color: #cccccc;
+            font-size: 0.8em !important;
+        }
+
+        .social {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 70px;
+        }
+
+        .social>a>img {
+            width: 4vw;
+            border-radius: 50px;
+            box-shadow: 0px 0px 2px 1px rgb(45, 207, 45);
+        }
+
+        .social>a>img:hover {
+            box-shadow: 0px 0px 4px 4px rgb(45, 207, 45);
+        }
+
+        .social>a {
+            transition: 0.3s ease;
+        }
+
+        .social>a:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navdiv">
+            <a href="PixelPods-Home.html"><img id="logo" src="logo-pp.png" alt="Home"></a>
+            <ul class="navul">
+                <li class="navli"><a class="nava" href="About Us.html">About Us</a></li>
+                <li class="navli"><a class="nava" href="Features.html">Features</a></li>
+                <li class="navli"><a class="nava" href="Explore.html">Explore</a></li>
+                <li class="navli"><a class="nava" href="Contact-Us.html">Contact Us</a></li>
+                <input type="search" name="search" id="search" placeholder="🔍search">
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>“Experience the Future of Listening”</h1>
+        <p> “Discover what makes PixelPods the smartest earbuds ever built.”</p>
+    </div>
+
+    <div class="container">
+        <h1>Features</h1>
+        <div class="features">
+            <div class="fet">
+                <img src="aivoiceasst.jpg" alt="feature">
+                <h2>AI Voice Asst.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="fet">
+                <img src="healthtracker.jpg" alt="feature">
+                <h2>Health Tracker</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="fet">
+                <img src="playtime.jpg" alt="feature">
+                <h2>48 HRS PlayTime</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="fet">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2022/08/AirPods-WIth-ANC.jpg?q=50&fit=crop&w=1140&h=&dpr=1.5"
+                    alt="feature">
+                <h2>Noise Cancellation</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="fet">
+                <img src="https://www.jiomart.com/images/product/original/rvm3aaekdc/acwo-dwots-fire-truly-wireless-in-ear-half-in-ear-buds-in-one-case-3-3-eq-modes-wireless-charging-enabled-ai-enc-with-quad-micn-ear-half-in-ear-buds-in-one-case-3-3-eq-modes-for-personalized-sound-wireless-charging-enabled-ai-enc-with-quad-mic-legal-images-orvm3aaekdc-p606965945-6-202312281322.jpg?im=Resize=(420,420)"
+                    alt="feature">
+                <h2>Wireless Charging</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="fet">
+                <img src="touch-controls.jpeg" alt="feature">
+                <h2>Touch Controls</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footr">
+        <div class="footer">
+            <div class="fcnt">
+                <h4>Help</h4>
+                <ul>
+                    <li><a class="helpopt" href="">Track your Order</a></li>
+                    <li><a class="helpopt" href="">Warranty and Support</a></li>
+                    <li><a class="helpopt" href="">Return Policy</a></li>
+                    <li><a class="helpopt" href="">Service Centers</a></li>
+                    <li><a class="helpopt" href="">Bulk Orders</a></li>
+                </ul>
+            </div>
+
+            <div class="fcnt">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="">About PixelPods</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Read our Blog</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Social Responsibility</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social">
+            <a title="Visit Instagram" href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+            <a title="Visit Facebook" href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+            <a title="Visit Twitter" href="https://www.x.com"><img src="twitter.png" alt="Twitter"></a>
+            <a title="Visit Linkedin" href="https://www.linkedin.com"><img src="linkedin.png" alt="Linkedin"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

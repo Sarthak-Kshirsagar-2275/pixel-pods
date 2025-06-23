@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: linear-gradient(180deg, #0d0d0d, rgb(41, 41, 41));
+        overflow-x: hidden;
+    }
+
+
+    nav {
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+        background-color: #0d0d0d;
+    }
+
+    .navdiv {
+        display: flex;
+    }
+
+    .nava {
+        color: #ffffff;
+        font-size: 1.3em;
+        font-family: garamond;
+    }
+
+    .nava:hover {
+        color: rgb(45, 207, 45);
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navli {
+        list-style: none;
+        display: inline-block;
+        padding-top: 1.9vw;
+        padding-left: 10vw;
+    }
+
+    .navli:hover {
+        transform: scale(1.01);
+    }
+
+    #search {
+            padding: 10px;
+            margin-left: 5vw;
+            border-radius: 20px;
+        }
+
+    #logo {
+        width: 15vw;
+        height: 5vw;
+    }
+
+    .form {
+        max-width: 500px;
+        width: 90%;
+        margin: 60px auto;
+        padding: 20px;
+        box-shadow: 0 0 12px 2px rgb(45, 207, 45);
+        border-radius: 12px;
+        text-align: center;
+    }
+
+
+    .form>h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+        font-family: papyrus;
+        color: #ffffff;
+        text-shadow: 0px 0px 6px rgb(45, 207, 45);
+    }
+
+    .form-grp {
+        padding: 5px;
+        text-align: center;
+        font-family: papyrus;
+        color: #ffffff;
+    }
+
+    label {
+        display: block;
+        font-size: 1.2em;
+        text-shadow: 0px 0px 6px rgb(45, 207, 45);
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    textarea {
+        padding: 10px;
+        overflow: auto;
+        border-radius: 10px;
+
+    }
+
+    input[type="submit"] {
+        width: 50%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    #footr {
+        background: #0d0d0d;
+        padding: 80px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .fcnt {
+        font-size: 1.2em;
+    }
+
+    .fcnt>ul>li {
+        list-style: none;
+    }
+
+    .fcnt>ul>li>a:hover {
+        text-decoration: underline;
+    }
+
+    .fcnt>h4 {
+        font-size: 1.4em;
+        padding-bottom: 10px;
+        color: rgb(45, 207, 45);
+    }
+
+    .fcnt>ul>li>a {
+        color: #cccccc;
+        font-size: 0.8em !important;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 70px;
+    }
+
+    .social>a>img {
+        width: 4vw;
+        border-radius: 50px;
+        box-shadow: 0px 0px 2px 1px rgb(45, 207, 45);
+    }
+
+    .social>a>img:hover {
+        box-shadow: 0px 0px 4px 4px rgb(45, 207, 45);
+    }
+
+    .social>a {
+        transition: 0.3s ease;
+    }
+
+    .social>a:hover {
+        transform: scale(1.02);
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="navdiv">
+            <a href="PixelPods-Home.html"><img id="logo" src="logo-pp.png" alt="Home"></a>
+            <ul class="navul">
+                <li class="navli"><a class="nava" href="About Us.html">About Us</a></li>
+                <li class="navli"><a class="nava" href="Features.html">Features</a></li>
+                <li class="navli"><a class="nava" href="Explore.html">Explore</a></li>
+                <li class="navli"><a class="nava" href="Contact-Us.html">Contact Us</a></li>
+                <input type="search" name="search" id="search" placeholder="🔍search">
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form">
+        <h1>"We'd Love to Hear From You"</h1>
+        <form action="#" method="post">
+            <div class="form-grp">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-grp">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-grp">
+                <label for="subject">Subject</label>
+                <textarea rows="3" cols="21" name="subject" id="subject"></textarea>
+            </div>
+            <div class="form-grp">
+                <label for="message">Message</label>
+                <textarea rows="3" cols="21" name="message" id="message" required></textarea>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <footer id="footr">
+        <div class="footer">
+            <div class="fcnt">
+                <h4>Help</h4>
+                <ul>
+                    <li><a class="helpopt" href="">Track your Order</a></li>
+                    <li><a class="helpopt" href="">Warranty and Support</a></li>
+                    <li><a class="helpopt" href="">Return Policy</a></li>
+                    <li><a class="helpopt" href="">Service Centers</a></li>
+                    <li><a class="helpopt" href="">Bulk Orders</a></li>
+                </ul>
+            </div>
+
+            <div class="fcnt">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="">About PixelPods</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Read our Blog</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Social Responsibility</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social">
+            <a title="Visit Instagram" href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+            <a title="Visit Facebook" href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+            <a title="Visit Twitter" href="https://www.x.com"><img src="twitter.png" alt="Twitter"></a>
+            <a title="Visit Linkedin" href="https://www.linkedin.com"><img src="linkedin.png" alt="Linkedin"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
